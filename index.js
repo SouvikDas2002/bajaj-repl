@@ -30,7 +30,7 @@ app.post('/bfhl', (req, res) => {
 
   const userId = `john_doe_${new Date().toISOString().slice(0, 10).replace(/-/g, '')}`;
 
-  res.json({
+  res.send({
     is_success: true,
     user_id: userId,
     even_numbers: evenNumbers,
